@@ -1,27 +1,80 @@
-# Entorno virtual
+# =======================================
+#   ENTORNOS VIRTUALES Y SISTEMA
+# =======================================
 .venv/
 venv/
-
-# Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-
-# Jupyter Notebook
 .ipynb_checkpoints
-
-# Archivos del sistema
 .DS_Store
 Thumbs.db
-
-# IDEs
+.Python
+*.py[cod]
+*$py.class
 .vscode/
 .idea/
 
-# Datos grandes (opcional, si no quieres subir algunos CSVs muy grandes)
-# Ignorar SOLO archivos CSV grandes
-adultos_ensanut*.csv
-Antropometria*.csv
-BASE_*.csv
+# =======================================
+#   CARPETAS CON DATOS PRIVADOS
+# =======================================
+data/
+datos/
+raw/
+input/
+output/
+reports/
+reports_html/
+reports_pdf/
+results/
+figs/
+modelos_entrenados/
+modelos_entrenados_ext/
+
+# =======================================
+#   ARCHIVOS CONFIDENCIALES Y PESADOS
+# =======================================
+*.csv
+*.xlsx
+*.xls
+*.sav
+*.parquet
+*.json
+*.xml
+*.yml
+*.db
+*.sqlite3
+
+# =======================================
+#   MODELOS ENTRENADOS
+# =======================================
+*.joblib
+*.pkl
+*.h5
+*.model
+*.bin
+
+# =======================================
+#   ARCHIVOS DE STREAMLIT LOCAL
+# =======================================
+.streamlit/secrets.toml
+secrets.toml
+
+# =======================================
+#   LOGS Y ARCHIVOS TEMPORALES
+# =======================================
+*.log
+*.tmp
+*.bak
+*.swp
+*.zip
+*.tar
+*.gz
+*.7z
+
+# =======================================
+#   EXCEPCIONES (permitir SOLO lo necesario en el repo)
+# =======================================
+!requirements.txt
+!dashboard_odds_ext.py
+!streamlit_app.py
+!README.md
+
