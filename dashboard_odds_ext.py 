@@ -1,0 +1,30 @@
+# dashboard_odds_ext.py
+import streamlit as st
+import pandas as pd
+from pathlib import Path
+from PIL import Image
+
+BASE = Path(__file__).parent
+
+st.title("Modelo extendido de riesgo de diabetes – ENSANUT")
+
+# Cargar resultados
+tabla = pd.read_csv(BASE / "analisis_modelo_ext_odds_ratios_ci.csv")
+img_path = BASE / "fig_forest_modelo_ext.png"
+
+st.subheader("Forest plot de odds ratios")
+image = Image.open(img_path)
+st.image(image, caption="Odds ratios con IC 95% (escala logarítmica)", use_column_width=True)
+
+st.subheader("Tabla de resultados")
+st.dataframe(
+    tabla[["variable", "odds_ratio", "ci_95_inf", "ci_95_sup", "p_valor", "interpretacion_clinica"]]
+)
+
+st.markdown("""
+**Interpretación general**
+
+- Valores de OR > 1 indican aumento en el odds de diabetes.
+- Valores de OR < 1 indican efecto protector.
+- La significancia se interpreta con base en el IC 95% y el valor p.
+""")

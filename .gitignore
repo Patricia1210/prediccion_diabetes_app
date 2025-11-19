@@ -21,4 +21,7 @@ Thumbs.db
 .idea/
 
 # Datos grandes (opcional, si no quieres subir algunos CSVs muy grandes)
-# *.csv
+# Ignorar SOLO archivos CSV grandes
+adultos_ensanut*.csv
+Antropometria*.csv
+BASE_*.csv

@@ -1,0 +1,302 @@
+Variable,Etiqueta
+resultado_1,Resultado de entrevista 1
+resultado_2,Resultado de entrevista 2
+resultado_3,Resultado de entrevista 3
+resultado_4,Resultado de entrevista 4
+edad,Edad del Seleccionado
+sexo,Sexo del Seleccionado
+meses,Meses edad
+aedad,AEDAD ¿Cuántos años cumplidos tiene actualmente (NOMBRE) ?
+asexo,ASEXO ¿Cuál es el sexo de (NOMBRE) ?
+a0107,"Durante los últimos 12 meses, ¿ha perdido o ganado peso?"
+a0109,¿Esta pérdida de peso fue intencional?
+A0110A,¿Las acciones que tomó para perder peso fueron...
+A0110B,¿Las acciones que tomó para perder peso fueron...
+A0110C,¿Las acciones que tomó para perder peso fueron...
+A0110D,¿Las acciones que tomó para perder peso fueron...
+A0110E,¿Las acciones que tomó para perder peso fueron...
+A0110F,¿Las acciones que tomó para perder peso fueron...
+A0110G,¿Las acciones que tomó para perder peso fueron...
+A0110H,¿Las acciones que tomó para perder peso fueron...
+A0110I,¿Las acciones que tomó para perder peso fueron...
+a01esp,Las acciones que tomé para perder peso fueron ESPECIFIQUE
+a0212,Durante la última semana...¿le costaba concentrarse en lo que estaba haciendo?
+a0202,"2.2 En los últimos tres meses, en un servicio de salud ¿le aplicaron algún cuestionario sobre su estado emocional o salud mental, por ejemplo, el cuestionario sobre salud del paciente (PHQ-9)?"
+a0203,2.3 ¿Cuál fue el resultado del cuestionario?
+a0203e,2.3 ¿Cuál fue el resultado del cuestionario? Otro (especifique)
+a0205,2.5 ¿Le hicieron un diagnóstico de depresión mediante valoración clínica (Medicina o psicología)?
+a0206,2.6 ¿Cuál fue el resultado?
+a0206e,2.6 ¿Cuál fue el resultado? Otro (especifique)
+a0301a,3.A ¿Algún médico le ha dicho que tiene/tuvo prediabetes?
+a0301,¿Algún médico le ha dicho que tiene diabetes (o alta el azúcar en la sangre)?
+a0302,3.2 ¿Qué edad tenía usted cuando el médico le dijo que tenía diabetes (o alta el azúcar en la sangre)?
+a0303num,"En los últimos 12 meses, ¿cuántas veces y con qué frecuencia acudió al médico para controlar su diabetes (o azúcar alta en la sangre)?"
+a0304d,¿Hace cuánto tiempo fue la última ocasión en la que acudió con un profesional de la salud para tratar su diabetes?
+a0304m,¿Hace cuánto tiempo fue la última ocasión en la que acudió con un profesional de la salud para tratar su diabetes MESES?
+a0304a,¿Hace cuánto tiempo fue la última ocasión en la que acudió con un profesional de la salud para tratar su diabetes AÑOS?
+a0304b,"3.4b La última vez que acudió con el profesional de la salud para el cuidado de su diabetes, ¿cuál fue el principal motivo?"
+a0304be,"3.4b La última vez que acudió con el profesional de la salud para el cuidado de su diabetes, ¿cuál fue el principal motivo? Especifique"
+a0306a,"En esa última ocasión, en el lugar en donde lo(a) atendieron, ¿alguna persona revisó sus niveles de glucosa?"
+a0306f,"En esa última ocasión, en el lugar en donde lo(a) atendieron, ¿alguna persona le hizo sugerencias sobre cómo aumentar su actividad física (caminar, correr, etcétera)?"
+a0306g,"En esa última ocasión, en el lugar en donde lo(a) atendieron, ¿alguna persona lo invitó a participar en algún Grupo de ayuda mutua para el control de su diabetes?"
+a0306l,"En esa última ocasión, en el lugar en donde lo(a) atendieron, ¿alguna persona le recetó algún medicamento o insulina para la diabetes?"
+a0306m,"En esa última ocasión, en el lugar en donde lo(a) atendieron, ¿alguna persona le consiguió de manera gratuita los medicamentos recetados?"
+a0306n,"En esa última ocasión, en el lugar en donde lo(a) atendieron, ¿alguna persona le dio explicaciones sobre los medicamentos recetados?"
+a0306o,"En esa última ocasión, en el lugar en donde lo(a) atendieron, ¿alguna persona le midió la cintura?"
+a03061b,"En los últimos 12 meses, ¿cuántas veces estuvo hospitalizado debido a su diabetes (descontrol de azúcar, problemas en el pie o en la circulación)?"
+a03061c,¿Cuánto pagó la última vez que estuvo hospitalizado(a) debido a su diabetes?
+a0307,¿Actualmente toma pastillas o le aplican insulina para controlar su azúcar?
+a0308m,¿Cuánto tiempo tiene tomando pastillas para controlar su azúcar? meses
+a0308a,¿Cuánto tiempo tiene tomando pastillas para controlar su azúcar?  años
+a0310a,"Normalmente, ¿cuánto paga por sus pastillas o tratamiento de insulina para controlar su diabetes en un mes?"
+a0313,En los últimos seis meses ¿Ha suspendido algun(os) de los medicamentos más de una vez a la semana?
+a0313a,3.13a. Por cuánto tiempo ha dejado de tomar el medicamento
+a0314,3.14 ¿Cuál fue la causa principal de haber dejado de tomar sus medicamentos?
+A0314AA,3.14a Por qué razón no usa pastillas o insulina para controlar su diabetes?
+A0314AB,3.14a Por qué razón no usa pastillas o insulina para controlar su diabetes?
+A0314AC,3.14a Por qué razón no usa pastillas o insulina para controlar su diabetes?
+A0314AD,3.14a Por qué razón no usa pastillas o insulina para controlar su diabetes?
+A0314AE,3.14a Por qué razón no usa pastillas o insulina para controlar su diabetes?
+A0314AF,3.14a Por qué razón no usa pastillas o insulina para controlar su diabetes?
+A0314AG,3.14a Por qué razón no usa pastillas o insulina para controlar su diabetes?
+A0314AH,3.14a Por qué razón no usa pastillas o insulina para controlar su diabetes?
+A0312A,"Actualmente, ¿qué otro tratamiento lleva para controlar su azúcar?"
+A0312B,"Actualmente, ¿qué otro tratamiento lleva para controlar su azúcar?"
+A0312C,"Actualmente, ¿qué otro tratamiento lleva para controlar su azúcar?"
+A0312D,"Actualmente, ¿qué otro tratamiento lleva para controlar su azúcar?"
+A0315A,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315B,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315C,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315D,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315E,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315F,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315G,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315H,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315I,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315J,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315K,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315L,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315M,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315N,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315O,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315P,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315Q,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315R,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315S,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315T,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315U,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+A0315V,"Debido a la diabetes, ¿qué medidas preventivas ha seguido para evitar complicaciones en el último año?"
+a0316a,¿Debido a la diabetes ha tenido úlceras en piernas o pies?
+a0316b,¿Debido a la diabetes le han amputado alguna parte del cuerpo?
+a0316d,¿Debido a la diabetes ha perdido la vista?
+a0316e,¿Debido a la diabetes le han hecho diálisis?
+a0316f,¿Debido a la diabetes ha sufrido de un infarto al corazón?
+a0316g,¿Debido a la diabetes ha tenido un infarto cerebral?
+a0316h,¿Debido a la diabetes ha tenido pie diabético?
+a0316i,¿Debido a la diabetes sufrió de un coma diabético?
+a0316j,"¿Debido a la diabetes se le ha bajado el azúcar hasta el punto de tener un episodio de aparición súbita de sudoración, confusión o pérdida de conocimiento, que requirió ayuda de una tercera persona para su resolución?"
+a0316k,¿Debido a la diabetes le han dicho que tiene neuropatía diabética?
+a0316l,¿Debido a la diabetes le han dicho que tiene retinopatía diabética?
+a0401,¿Algún médico le ha dicho que tiene la presión alta?
+a0402a,¿Hace cuánto tiempo le dijo su médico que tiene la presión alta? Años
+a0404,¿Actualmente toma alguna medicina (pastillas) para controlar su presión alta?
+a0404a,¿Cuánto gasta usualmente por sus pastillas para controlar su presión alta un mes?
+a0405m,¿Cuánto tiempo tiene tomando este medicamento? Meses
+a0405a,¿Cuánto tiempo tiene tomando este medicamento? Años
+a0405aa,"4.5a En los últimos tres meses ¿ha dejado de tomar algún(os) de los medicamentos para su presión, al menos 1 día?"
+a0405b,4.5b ¿Por cuánto tiempo ha dejado de tomar el medicamento?
+a0405c,4.5c ¿Cuál fue la causa principal de haber dejado de tomar sus medicamentos?
+A0405DA,4.5d ¿Por qué razón no toma pastillas para controlar su presión arterial?
+A0405DB,4.5d ¿Por qué razón no toma pastillas para controlar su presión arterial?
+A0405DC,4.5d ¿Por qué razón no toma pastillas para controlar su presión arterial?
+A0405DD,4.5d ¿Por qué razón no toma pastillas para controlar su presión arterial?
+A0405DE,4.5d ¿Por qué razón no toma pastillas para controlar su presión arterial?
+A0405DF,4.5d ¿Por qué razón no toma pastillas para controlar su presión arterial?
+A0405DG,4.5d ¿Por qué razón no toma pastillas para controlar su presión arterial?
+A0405DH,4.5d ¿Por qué razón no toma pastillas para controlar su presión arterial?
+a0406,"En los últimos 12 meses, ¿cuántas veces acudió al médico para controlar su hipertensión (sin contar las visitas al servicio de urgencias)?"
+a0406b,¿Cuánto pagó la última vez que acudió al médico para controlar su hipertensión?
+a0406e,"4.6e En los últimos 12 meses, ¿cuántas veces estuvo hospitalizado(a) debido al descontrol de su hipertensión?"
+a0407,¿En dónde se atiende principalmente para controlar su presión alta?
+a0407esp,¿En dónde se atiende principalmente para controlar su presión alta? Especifique
+A0408A,"Actualmente, ¿qué otro tratamiento lleva para controlar su presión alta?"
+A0408B,"Actualmente, ¿qué otro tratamiento lleva para controlar su presión alta?"
+A0408C,"Actualmente, ¿qué otro tratamiento lleva para controlar su presión alta?"
+A0408D,"Actualmente, ¿qué otro tratamiento lleva para controlar su presión alta?"
+A0408E,"Actualmente, ¿qué otro tratamiento lleva para controlar su presión alta?"
+a0409,"En los últimos 12 meses, ¿cada cuándo le tomaron la presión?"
+a0409a,¿Cuántas veces?
+a0410a,¿Debido a la hipertensión ha sufrido daño en la retina?
+a0410b,¿Debido a la hipertensión le han hecho diálisis?
+a0410c,¿Debido a la hipertensión ha sufrido de un infarto al corazón?
+a0410d,¿Debido a la hipertensión ha tenido un infarto o embolia cerebral?
+a0410e,¿Debido a la hipertensión ha acudido a un servicio de urgencias en el último año?
+a0410ev,¿Cuántas veces?
+a0410f,¿Debido a la hipertensión ha estado hospitalizado por más de 24 horas en el último año?
+a0410fv,¿Cuántas veces?
+a0502b,"¿Le ha dicho el médico que usted tiene (o tuvo) angina de pecho (dolor o molestia en el pecho, que desaparece regularmente de forma espontánea con el reposo o con medicinas?"
+a0601a,"¿Alguna vez un médico le ha dicho que padece de alguna enfermedad del riñón, como infección de vías urinarias en más de una ocasión?"
+a0601b,"¿Alguna vez un médico le ha dicho que padece de alguna enfermedad del riñón, como cálculos renales?"
+a0601c,"¿Alguna vez un médico le ha dicho que padece de alguna enfermedad del riñón, como insuficiencia renal o enfermedad renal crónica?"
+a0607a,"Sí toma algún medicamento, ¿Normalmente cuánto paga en un mes por sus medicamentos para el colesterol y/o triglicéridos?"
+a0701p,¿Su PADRE tiene o tuvo diabetes o azúcar alta en la sangre?
+a0702p,¿Su PADRE tiene o tuvo hipertensión o presión alta?
+a0704p,¿A qué edad su PADRE tuvo su primer infarto?
+a0701m,¿Su MADRE tiene o tuvo diabetes o azúcar alta en la sangre?
+a0702m,¿Su MADRE tiene o tuvo hipertensión o presión alta?
+a0704m,¿A qué edad su MADRE tuvo su primer infarto?
+a0701h,¿Su HERMANO(A) tiene o tuvo diabetes o azúcar alta en la sangre?
+a0702h,¿Su HERMANO(A) tiene o tuvo hipertensión o presión alta?
+a0704h,¿A qué edad su HERMANO(A) tuvo su primer infarto?
+a0801,¿A qué edad tuvo su primera relación sexual?
+a0802,¿Qué edad tenía su pareja en su primera relación sexual?
+a0806,¿A qué edad tuvo su primera regla o menstruación?
+a0807,¿Alguna vez ha estado embarazada?
+a0810ad,¿Cuántos han fallecido Antes de cumplir un año de edad?
+a0810ae,¿Cuántos han fallecido Después de cumplir un año de edad?
+a0812,En total ¿cuántas veces la revisaron durante su último embarazo?
+a0815c,"Durante el embarazo, cuando visitó al médico, enfermera o algún otro personal de salud, ¿Se le realizó algo de lo siguiente al menos una vez le tomaron la presión arterial?"
+a0815f,"Durante el embarazo, cuando visitó al médico, enfermera o algún otro personal de salud, ¿Se le realizó algo de lo siguiente al menos una vez le midieron su nivel de azúcar en sangre?"
+a0815m,"Durante el embarazo, cuando visitó al médico, enfermera o algún otro personal de salud, ¿Se le realizó algo de lo siguiente al menos una vez le ofrecieron algún servicio de detección o atención para la salud mental (ansiedad, depresión)?"
+a0821b,"En la primera semana después del parto de su último(a) hijo(a) ¿algún profesional de la salud le dio información sobre signos y síntomas de preeclampsia, eclampsia? (es decir, la presión alta durante el embarazo o poco después del parto)"
+a0821i,En la primera semana después del parto de su último(a) hijo(a) ¿algún profesional de la salud le dio información sobre signos y síntomas de la depresión post natal o post parto?
+a0824,"Sin decirme el resultado, en los últimos 12 meses ¿ le hicieron una prueba para detectar inmunodeficiencia humana (VIH)?"
+a0825,Sin decirme el resultado de la prueba ¿lo recibió?
+a0904,"Desde sus 20 años de edad, ¿le han aplicado la vacuna contra el Sarampión y la Rubéola (SR)? (para personas entre 20 a 39 años)"
+a0995,¿Cuántas veces se la han aplicado?
+a0997,¿Cuántas veces se la han aplicado?
+a09131ed,Otras Vacunas 1 Edad
+a09132edad,Otras Vacunas 2 Edad
+a09133ed,Otras Vacunas 3 Edad
+a09134ed,Otras Vacunas 4 Edad
+a09135ed,Otras Vacunas 5 Edad
+a0918,¿Cuántas veces le han aplicado la vacuna contra el Neumococo?
+a0920,¿Cuántas veces se le han aplicado la vacuna contra el Tétanos?
+a09251ed,Otras Vacunas 1 Edad
+a09252ed,Otras Vacunas 2 Edad
+a09253ed,Otras Vacunas 3 Edad
+a09254ed,Otras Vacunas 4 Edad
+a09255ed,Otras Vacunas 5 Edad
+a1003a,A1003A ¿Presentaba algún síntoma por el que le realizaron la prueba de detección?
+a1004a,A1004A ¿Le entregaron el resultado del estudio?
+a1008a,A1008A ¿Ha tenido consultas de seguimiento a partir de su diagnóstico o de su tratamiento?
+a1003b,A1003B ¿Presentaba algún síntoma por el que le realizaron la prueba de detección?
+a1004b,A1004B ¿Le entregaron el resultado del estudio?
+a1008b,A1008B ¿Ha tenido consultas de seguimiento a partir de su diagnóstico o de su tratamiento?
+a1003c,A1003C ¿Presentaba algún síntoma por el que le realizaron la prueba de detección?
+a1004c,A1004C ¿Le entregaron el resultado del estudio?
+a1008c,A1008C ¿Ha tenido consultas de seguimiento a partir de su diagnóstico o de su tratamiento?
+a1003d,A1003D ¿Presentaba algún síntoma por el que le realizaron la prueba de detección?
+a1004d,A1004D ¿Le entregaron el resultado del estudio?
+a1008d,A1008D ¿Ha tenido consultas de seguimiento a partir de su diagnóstico o de su tratamiento?
+a1001f,"A1001F Durante los últimos 12 meses, un médico u otro profesional de la salud le realizó…f) detección de sobrepeso u obesidad?"
+a1003f,A1003F ¿Presentaba algún síntoma por el que le realizaron la prueba de detección?
+a1004f,A1004F ¿Le entregaron el resultado del estudio?
+a1008f,A1008F ¿Ha tenido consultas de seguimiento a partir de su diagnóstico o de su tratamiento?
+a1001f1,"A1001F1 Durante los últimos 12 meses, un médico u otro profesional de la salud le realizó… f.1) medición del perímetro de la cintura?"
+a1003f1,A1003F1 ¿Presentaba algún síntoma por el que le realizaron la prueba de detección?
+a1004f1,A1004F1 ¿Le entregaron el resultado del estudio?
+a1008f1,A1008F1 ¿Ha tenido consultas de seguimiento a partir de su diagnóstico o de su tratamiento?
+a1001g,"A1001G Durante los últimos 12 meses, un médico u otro profesional de la salud le realizó… g) detección de diabetes?"
+a1003g,A1003G ¿Presentaba algún síntoma por el que le realizaron la prueba de detección?
+a1004g,A1004G ¿Le entregaron el resultado del estudio?
+a1008g,A1008G ¿Ha tenido consultas de seguimiento a partir de su diagnóstico o de su tratamiento?
+a1001h,"A1001H Durante los últimos 12 meses, un médico u otro profesional de la salud le realizó… h) detección de hipertensión?"
+a1003h,A1003H ¿Presentaba algún síntoma por el que le realizaron la prueba de detección?
+a1004h,A1004H ¿Le entregaron el resultado del estudio?
+a1008h,A1008H ¿Ha tenido consultas de seguimiento a partir de su diagnóstico o de su tratamiento?
+a1003i,A1003I ¿Presentaba algún síntoma por el que le realizaron la prueba de detección?
+a1004i,A1004I ¿Le entregaron el resultado del estudio?
+a1008i,A1008I ¿Ha tenido consultas de seguimiento a partir de su diagnóstico o de su tratamiento?
+a1003j,A1003J ¿Presentaba algún síntoma por el que le realizaron la prueba de detección?
+a1004j,A1004J ¿Le entregaron el resultado del estudio?
+a1008j,A1008J ¿Ha tenido consultas de seguimiento a partir de su diagnóstico o de su tratamiento?
+a1103,A1103 ¿Llevaba puesto el cinturón?
+a1108,A1108 ¿Cuándo sufrió el accidente estaba bajo los efectos de…
+nota004,NOTA004 Ahora le preguntaré sobre algún incidente de agresión o violencia que haya presentado
+a1207,A1207 Cuando sufrió el ataque o violencia ¿estaba usted bajo los efectos de…
+a1213,"A1213 ¿Alguna vez a propósito se ha herido, cortado, intoxicado o hecho daño con el fin de quitarse la vida?"
+nota006,NOTA006 TABACO Y ALCOHOL
+a1301,"A1301 Actualmente, ¿fuma tabaco…"
+a1302,A1302 ¿A qué edad comenzó a fumar productos del tabaco todos los días?
+a1303,"A1303 En pormedio, ¿cuántos cigarros fuma actualmente por día?"
+a1304,"A1304 En pormedio, ¿cuántos cigarros fuma actualmente por semana?"
+a1305,A1305 En el pasado ¿ha fumado productos del tabaco…
+a1306p,A1306P ¿Hace cuánto tiempo dejó definitivamente de fumar? PERIODO
+a1306t,A1306T ¿Hace cuánto tiempo dejó definitivamente de fumar? TIEMPO
+a1307,"A1307 Los cigarros electrónicos son productos que utilizan baterías u otros métodos para producir un vapor que puede contener nicotina. Se conocen como “e-cigarrete”, “Vape-pen”, “e-shisha” y “e-pipes”"
+a1308,"A1308 En los últimos 12 meses,¿Con qué frecuencia tomó al menos una copa ya sea de vino, cerveza, whisky o cualquier otra bebida que contenga alcohol?"
+a1311,"A1311 En los últimos 30 días, ¿Tomó cinco o más copas de alcohol en al menos una ocasión"
+a1312,"A1312 En los últimos 30 días, ¿Tomó cuatro o más copas de alcohol en al menos una ocasión?"
+a1313,"A1313 En los últimos 3 meses, ¿le han realizado un test sobre consumo de alcohol al ser atendido por alguna necesidad de salud en alguna institución de salud?"
+a1314,A1314 ¿Recibió consejería sobre su consumo de alcohol?
+a13a3a,"A13A3A Casi todo el mundo toma medicamentos y sustancias por varias razones. Me podrías decir si ha tomado, usado, probado... a) Opiáceos"
+a13a4a,"A13A4A Principalmente, ¿Cómo ha usado (mencione medicamento o sustancia) fue... a) Opiáceos"
+a13a5a,A13A5A ¿Qué edad tenía cuando usó (mencione medicamento o sustancia) sin prescripción médica por primera vez? a) Opiáceos
+a13a6a,A13A6A ¿Cuántas veces en su vida ha usado (mencione medicamento o sustancia) sin prescripción médica? a) Opiáceos
+a13a7a,"A13A7A En los últimos 12 meses, ¿ha usado (mencione medicamento o sustancia) sin prescripción médica? a) Opiáceos"
+a13a3b,"A13A3B Casi todo el mundo toma medicamentos y sustancias por varias razones. Me podrías decir si ha tomado, usado, probado... b) Tranquilizantes"
+a13a4b,"A13A4B Principalmente, ¿Cómo ha usado (mencione medicamento o sustancia) fue... b) Tranquilizantes"
+a13a5b,A13A5B ¿Qué edad tenía cuando usasó (mencione medicamento o sustancia) sin prescripción médica por priemera vez? b) Tranquilizantes
+a13a6b,A13A6B ¿Cuántas veces en su vida ha usado (mencione medicamento o sustancia) sin prescripción médica? b) Tranquilizantes
+a13a7b,"A13A7B En los últimos 12 meses, ¿ha usado (mencione medicamento o sustancia) sin prescripción médica? b) Tranquilizantes"
+a13a3c,"A13A3C Casi todo el mundo toma medicamentos y sustancias por varias razones. Me podría decir si ha tomado, usado, probado... c) Sedantes y Barbitúricos"
+a13a4c,"A13A4C Principalmente, ¿Cómo ha usado (mencione medicamento o sustancia) fue... c) Sedantes y Barbitúricos"
+a13a5c,A13A5C ¿Qué edad tenía cuando usó (mencione medicamento o sustancia) sin prescripción médica por priemera vez? c) Sedantes y Barbitúricos
+a13a6c,A13A6C ¿Cuántas veces en su vida ha usado (mencione medicamento o sustancia) sin prescripción médica? c) Sedantes y Barbitúricos
+a13a7c,"A13A7C En los últimos 12 meses, ¿ha usado (mencione medicamento o sustancia) sin prescripción médica? c) Sedantes y Barbitúricos"
+a13a3d,"A13A3D Casi todo el mundo toma medicamentos y sustancias por varias razones. Me podría decir si ha tomado, usado, probado... d) Anfetaminas o estimulantes"
+a13a4d,"A13A4D Principalmente, ¿Cómo ha usado (mencione medicamento o sustancia) fue... d) Anfetaminas o estimulantes"
+a13a5d,A13A5D ¿Qué edad tenía cuando usó (mencione medicamento o sustancia) sin prescripción médica por priemera vez? d) Anfetaminas o estimulantes
+a13a6d,A13A6D ¿Cuántas veces en su vida ha usado (mencione medicamento o sustancia) sin prescripción médica? d) Anfetaminas o estimulantes
+a13a7d,"A13A7D En los últimos 12 meses, ¿ha usado (mencione medicamento o sustancia) sin prescripción médica? d) Anfetaminas o estimulantes"
+a13a9a,A13A9A ¿Qué edad tenía cuando usó (mencione sustancia) por priemera vez? a) Mariguana
+a13a11av,A13A11AV ¿Cuántas veces usó (mencione sustancia)en los últimos 12 meses? a) Mariguana
+a13a9b,A13A9B ¿Qué edad tenía cuando usó (mencione sustancia) por priemera vez? b) Cocaina
+a13a11bv,A13A11BV ¿Cuántas veces usó (mencione sustancia)en los últimos 12 meses? b) Cocaina
+a13a9c,A13A9C ¿Qué edad tenía cuando usó (mencione sustancia) por priemera vez? c) Crack
+a13a11cv,A13A11CV ¿Cuántas veces usó (mencione sustancia)en los últimos 12 meses? c) Crack
+a13a9d,A13A9D ¿Qué edad tenía cuando usó (mencione sustancia) por priemera vez? d) Alucinógenos
+a13a11dv,A13A11DV ¿Cuántas veces usó (mencione sustancia)en los últimos 12 meses? d) Alucinógenos
+a13a9e,A13A9E ¿Qué edad tenía cuando usó (mencione sustancia) por priemera vez? e) Inhalables
+a13a11ev,A13A11EV ¿Cuántas veces usó (mencione sustancia)en los últimos 12 meses? e) Inhalables
+a13a9f,A13A9F ¿Qué edad tenía cuando usó (mencione sustancia) por priemera vez? f) Heroína
+a13a11fv,A13A11FV ¿Cuántas veces y con que frecuencia usó (mencione sustancia)en los últimos 12 meses? f) Heroína
+a13a9g,A13A9G ¿Qué edad tenía cuando usó (mencione sustancia) por priemera vez? g) Estimulantes
+a13a11gv,A13A11GV ¿Cuántas veces usó (mencione sustancia)en los últimos 12 meses? g) Estimulantes
+a13a9h,A13A9H ¿Qué edad tenía cuando usó (mencione sustancia) por priemera vez? h) Otras drogas
+a13a11hv,A13A11HV ¿Cuántas veces y con que frecuencia usó (mencione sustancia)en los últimos 12 meses? h) Otras drogas
+a1403a,"A1403A Cunado usa anteojos o lentes de contacto, ¿tiene dificultad para ver?"
+a1403b,A1403B ¿Tiene dificultades para ver?
+a1404a,"A1404A Cuando usa su(s) prótesis auditiva(s), ¿tiene dificultad para oír?"
+a1404b,A1404B ¿Tiene dificultades para oír?
+a1405,A1405 ¿Tiene dificultad para caminar o subir escalones?
+a1406,A1406 ¿Tiene dificultad para recordar o concentrarse?
+a1407,"A1407 ¿Tiene dificultad para el cuidado propio, tal como lavarse todo el cuerpo o vestirse?"
+a1408,"A1408 Usando su idioma habitual, ¿tiene dificultad para comunicarse, por ejemplo, entender a otros o hacerse entender?"
+a1505,A1505 ¿Alguna vez un médico le ha diagnosticado... enfermedad de Alzheimer?
+a1507,A1507 ¿Alguna vez un médico le ha diagnosticado... Enfermedad de Parkinson?
+a1508,A1508 ¿Alguna vez un médico le ha diagnosticado... Demencia relacionada con el consumo de alcohol?
+nota042,NOTA042 XVI. ACTIVIDADES BÁSICAS DE LA VIDA DIARIA
+a1601,"A1601 ¿Tiene alguna DIFICULTAD... para bañarse (lavarse con esponja, ducha o en bañera)?"
+a1602,A1602 ¿Tiene alguna DIFICULTAD... para vestirse?
+a1603,A1603 ¿Tiene alguna DIFICULTAD... para usar el sanitario?
+a1604,A1604 ¿Tiene alguna DIFICULTAD... para movilizarse?
+a1605,A1605 ¿Tiene alguna DIFICULTAD... para tener continencia urinaria o fecal (capacidad para controlar la orina o la materia fecal)?
+a1606,A1606 ¿Tiene alguna DIFICULTAD... para alimentarse?
+nota044,NOTA044 XVII. ACTIVIDADES INSTRUMENTALES DE LA VIDA DIARIA
+a1701,A1701 ¿Tiene alguna DIFICULTAD... para utilizar el teléfono?
+a1702,A1702 ¿Tiene alguna DIFICULTAD... para realizar compras?
+a1703,A1703 ¿Tiene alguna DIFICULTAD... para cocinar?
+a1704,A1704 ¿Tiene alguna DIFICULTAD... para realizar labores de la casa?
+a1705,A1705 ¿Tiene alguna DIFICULTAD... para lavar ropa?
+a1706,A1706 ¿Tiene alguna DIFICULTAD... para usar transporte?
+a1707,A1707 ¿Tiene alguna DIFICULTAD... para tomar sus medicamentos (si toma alguno o tuviera que tomar alguno)?
+a1708,A1708 ¿Tiene alguna DIFICULTAD... para manejar dinero?
+a1801a,A1801A ¿Cuántas veces se cayó?
+a1901,A1901 ¿Qué tanta dificultad tiene para llevar o cargar 4.5 kilogramos?
+a1902,A1902 ¿Qué tanta dificultad tiene para cruzar caminando por un cuarto?
+a1903,A1903 ¿Qué tanta dificultad tiene para levantarse de una silla o cama?
+a1904,A1904 ¿Qué tanta dificultad tiene para subir 10 escalones?
+completa,Resultado de Entrevista
+otroent,Especifique otro resultado de entrevista

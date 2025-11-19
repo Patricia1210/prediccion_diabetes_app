@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Informe clínico – Modelo extendido de riesgo de diabetes</title>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 30px;
+    color: #111827;
+    line-height: 1.5;
+}
+h1, h2, h3 {
+    color: #0f172a;
+}
+.tabla-resultados {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+}
+.tabla-resultados th, .tabla-resultados td {
+    border: 1px solid #e5e7eb;
+    padding: 6px 8px;
+}
+.tabla-resultados th {
+    background: #f3f4f6;
+    text-align: left;
+}
+.figure-container {
+    text-align: center;
+    margin: 24px 0;
+}
+small {
+    color: #6b7280;
+}
+</style>
+</head>
+<body>
+
+<h1>Informe clínico – Modelo extendido de riesgo de diabetes</h1>
+
+<p>Este informe resume los coeficientes, odds ratios e intervenciones sugeridas a partir
+del modelo de regresión logística multivariado ajustado con el dataset extendido de
+ENSANUT 2023.</p>
+
+<h2>1. Forest plot de odds ratios</h2>
+
+<div class="figure-container">
+    <img src="PASO11_forestplot_ext.png" alt="Forest plot odds ratios" style="max-width:100%; height:auto;">
+    <div><small>En este análisis no se contaba con intervalos de confianza al 95 %; las barras del forest plot corresponden al valor puntual del odds ratio.</small></div>
+</div>
+
+<h2>2. Tabla de resultados del modelo</h2>
+
+<table class="dataframe tabla-resultados">
+  <thead>
+    <tr style="text-align: center;">
+      <th>variable</th>
+      <th>coeficiente</th>
+      <th>odds_ratio</th>
+      <th>ci_95%</th>
+      <th>p_value</th>
+      <th>clasificacion_efecto</th>
+      <th>interpretacion_clinica_auto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>depresion_diagnosticada</td>
+      <td>1.520</td>
+      <td>4.570</td>
+      <td>4.570 – 4.570</td>
+      <td></td>
+      <td>Aumento MUY marcado del riesgo</td>
+      <td>Aumenta el riesgo: cada unidad incrementa 357.0% el riesgo.</td>
+    </tr>
+    <tr>
+      <td>colesterol_alto</td>
+      <td>1.404</td>
+      <td>4.072</td>
+      <td>4.072 – 4.072</td>
+      <td></td>
+      <td>Aumento MUY marcado del riesgo</td>
+      <td>Aumenta el riesgo: cada unidad incrementa 307.2% el riesgo.</td>
+    </tr>
+    <tr>
+      <td>madre_diabetica</td>
+      <td>1.007</td>
+      <td>2.737</td>
+      <td>2.737 – 2.737</td>
+      <td></td>
+      <td>Aumento moderado-alto del riesgo</td>
+      <td>Aumenta el riesgo: cada unidad incrementa 173.7% el riesgo.</td>
+    </tr>
+    <tr>
+      <td>imc</td>
+      <td>0.505</td>
+      <td>1.658</td>
+      <td>1.658 – 1.658</td>
+      <td></td>
+      <td>Aumento leve del riesgo</td>
+      <td>Aumenta el riesgo: cada unidad incrementa 65.8% el riesgo.</td>
+    </tr>
+    <tr>
+      <td>edad</td>
+      <td>0.447</td>
+      <td>1.563</td>
+      <td>1.563 – 1.563</td>
+      <td></td>
+      <td>Aumento leve del riesgo</td>
+      <td>Aumenta el riesgo: cada unidad incrementa 56.3% el riesgo.</td>
+    </tr>
+    <tr>
+      <td>fuma_actual</td>
+      <td>0.192</td>
+      <td>1.212</td>
+      <td>1.212 – 1.212</td>
+      <td></td>
+      <td>Aumento leve del riesgo</td>
+      <td>Aumenta el riesgo: cada unidad incrementa 21.2% el riesgo.</td>
+    </tr>
+    <tr>
+      <td>diagnostico_hipertension</td>
+      <td>0.102</td>
+      <td>1.108</td>
+      <td>1.108 – 1.108</td>
+      <td></td>
+      <td>Efecto neutro o mínimo</td>
+      <td>Aumenta el riesgo: cada unidad incrementa 10.8% el riesgo.</td>
+    </tr>
+    <tr>
+      <td>infarto_cardiaco</td>
+      <td>0.001</td>
+      <td>1.001</td>
+      <td>1.001 – 1.001</td>
+      <td></td>
+      <td>Efecto neutro o mínimo</td>
+      <td>Aumenta el riesgo: cada unidad incrementa 0.1% el riesgo.</td>
+    </tr>
+    <tr>
+      <td>cintura_cm</td>
+      <td>-0.025</td>
+      <td>0.976</td>
+      <td>0.976 – 0.976</td>
+      <td></td>
+      <td>Efecto neutro o mínimo</td>
+      <td>Disminuye el riesgo: reduce el riesgo en 2.4%.</td>
+    </tr>
+    <tr>
+      <td>peso_kg</td>
+      <td>-0.100</td>
+      <td>0.905</td>
+      <td>0.905 – 0.905</td>
+      <td></td>
+      <td>Efecto neutro o mínimo</td>
+      <td>Disminuye el riesgo: reduce el riesgo en 9.5%.</td>
+    </tr>
+    <tr>
+      <td>talla_cm</td>
+      <td>-0.110</td>
+      <td>0.896</td>
+      <td>0.896 – 0.896</td>
+      <td></td>
+      <td>Efecto neutro o mínimo</td>
+      <td>Disminuye el riesgo: reduce el riesgo en 10.4%.</td>
+    </tr>
+    <tr>
+      <td>consume_alcohol</td>
+      <td>-0.632</td>
+      <td>0.532</td>
+      <td>0.532 – 0.532</td>
+      <td></td>
+      <td>Reducción leve del riesgo</td>
+      <td>Disminuye el riesgo: reduce el riesgo en 46.8%.</td>
+    </tr>
+    <tr>
+      <td>padre_diabetico</td>
+      <td>-1.328</td>
+      <td>0.265</td>
+      <td>0.265 – 0.265</td>
+      <td></td>
+      <td>Reducción MUY marcada del riesgo</td>
+      <td>Disminuye el riesgo: reduce el riesgo en 73.5%.</td>
+    </tr>
+    <tr>
+      <td>sexo_Mujer</td>
+      <td>-4.370</td>
+      <td>0.013</td>
+      <td>0.013 – 0.013</td>
+      <td></td>
+      <td>Reducción MUY marcada del riesgo</td>
+      <td>Disminuye el riesgo: reduce el riesgo en 98.7%.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>3. Síntesis para la práctica clínica</h2>
+
+<ul>
+<li>- **depresion_diagnosticada** (Aumento MUY marcado del riesgo). Se recomienda priorizar tamizaje y control intensivo en personas con este factor, con énfasis en educación para la salud y modificación de estilos de vida.</li><li>- **colesterol_alto** (Aumento MUY marcado del riesgo). Se recomienda priorizar tamizaje y control intensivo en personas con este factor, con énfasis en educación para la salud y modificación de estilos de vida.</li><li>- **madre_diabetica** (Aumento moderado-alto del riesgo). Se recomienda priorizar tamizaje y control intensivo en personas con este factor, con énfasis en educación para la salud y modificación de estilos de vida.</li><li>- **imc** (Aumento leve del riesgo). Se recomienda priorizar tamizaje y control intensivo en personas con este factor, con énfasis en educación para la salud y modificación de estilos de vida.</li><li>- **edad** (Aumento leve del riesgo). Se recomienda priorizar tamizaje y control intensivo en personas con este factor, con énfasis en educación para la salud y modificación de estilos de vida.</li><li>- **fuma_actual** (Aumento leve del riesgo). Se recomienda priorizar tamizaje y control intensivo en personas con este factor, con énfasis en educación para la salud y modificación de estilos de vida.</li><li>- **consume_alcohol** (Reducción leve del riesgo). Puede considerarse un factor protector; es recomendable promoverlo dentro de los programas de prevención cuando sea modificable.</li><li>- **padre_diabetico** (Reducción MUY marcada del riesgo). Puede considerarse un factor protector; es recomendable promoverlo dentro de los programas de prevención cuando sea modificable.</li><li>- **sexo_Mujer** (Reducción MUY marcada del riesgo). Puede considerarse un factor protector; es recomendable promoverlo dentro de los programas de prevención cuando sea modificable.</li>
+</ul>
+
+<p>Estas conclusiones pueden utilizarse para priorizar grupos de riesgo, definir
+estrategias de educación para la salud y apoyar la toma de decisiones en programas
+de prevención primaria y secundaria de diabetes mellitus tipo 2.</p>
+
+<hr>
+<small>Archivo generado automáticamente por <code>PASO11_informe_clinico_ext.py</code>.</small>
+
+</body>
+</html>
