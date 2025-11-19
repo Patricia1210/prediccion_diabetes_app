@@ -1,0 +1,15 @@
+variable,coeficiente,odds_ratio,interpretacion_clinica
+sexo_Mujer,-4.36957202172578,0.01265665618291044,Disminuye el riesgo: reduce el riesgo en 98.7%.
+depresion_diagnosticada,1.5196024630056093,4.570407927719852,Aumenta el riesgo: cada unidad incrementa 357.0% el riesgo.
+colesterol_alto,1.404148239524671,4.072056846642498,Aumenta el riesgo: cada unidad incrementa 307.2% el riesgo.
+padre_diabetico,-1.3279817746052118,0.2650115750263237,Disminuye el riesgo: reduce el riesgo en 73.5%.
+madre_diabetica,1.0067443494943271,2.7366768325760154,Aumenta el riesgo: cada unidad incrementa 173.7% el riesgo.
+consume_alcohol,-0.6319203466092418,0.5315700215470881,Disminuye el riesgo: reduce el riesgo en 46.8%.
+imc,0.5054086691808397,1.657662817762001,Aumenta el riesgo: cada unidad incrementa 65.8% el riesgo.
+edad,0.44670510801507446,1.5631532699423136,Aumenta el riesgo: cada unidad incrementa 56.3% el riesgo.
+fuma_actual,0.19209385444791685,1.2117842429690897,Aumenta el riesgo: cada unidad incrementa 21.2% el riesgo.
+talla_cm,-0.1101289423600764,0.8957186317756944,Disminuye el riesgo: reduce el riesgo en 10.4%.
+diagnostico_hipertension,0.10245364087021241,1.1078859400911827,Aumenta el riesgo: cada unidad incrementa 10.8% el riesgo.
+peso_kg,-0.09976015135878116,0.9050544680897392,Disminuye el riesgo: reduce el riesgo en 9.5%.
+cintura_cm,-0.024739294235786916,0.9755642140918591,Disminuye el riesgo: reduce el riesgo en 2.4%.
+infarto_cardiaco,0.0006938243568576892,1.0006940651086533,Aumenta el riesgo: cada unidad incrementa 0.1% el riesgo.
