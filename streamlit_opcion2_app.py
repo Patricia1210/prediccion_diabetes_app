@@ -474,8 +474,14 @@ st.markdown("""
             Modelo predictivo basado en análisis multivariado de datos ENSANUT 2023
         </p>
         <div class="header-authors">
-            <span class="author-name">Patricia Herrejón Calderón</span>
-            <span class="author-name">Luis Corona Alcantar</span>
+            <div style="display: inline-block; margin-right: 2rem;">
+                <span class="author-name">Patricia Herrejón Calderón</span><br>
+                <span style="font-size: 0.85rem; opacity: 0.85;">📧 nutriherrejon@gmail.com</span>
+            </div>
+            <div style="display: inline-block;">
+                <span class="author-name">Luis Corona Alcantar</span><br>
+                <span style="font-size: 0.85rem; opacity: 0.85;">📧 lca1643@gmail.com</span>
+            </div>
         </div>
     </div>
 """, unsafe_allow_html=True)
