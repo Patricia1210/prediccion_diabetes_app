@@ -486,13 +486,6 @@ tab_pred, tab_factores, tab_info = st.tabs([
     "📊 Análisis de Variables",
     "📖 Metodología"
 ])
-# Tabs principales
-tab_pred, tab_factores, tab_info = st.tabs([
-    "🔬 Análisis Predictivo", 
-    "📊 Análisis de Variables",
-    "📖 Metodología"
-])
-
 # ============================================================
 # TAB DE PREDICCIÓN
 # ============================================================
