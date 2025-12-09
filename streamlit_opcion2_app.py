@@ -480,13 +480,6 @@ st.markdown("""
         </div>
     </div>
 """, unsafe_allow_html=True)
-
-# Tabs principales
-tab_pred, tab_factores, tab_info = st.tabs([
-    "🔬 Análisis Predictivo", 
-    "📊 Análisis de Variables",
-    "📖 Metodología"
-])
 st.markdown(
     """
     <div style="text-align: center; margin-top: -10px;">
@@ -501,6 +494,14 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+# Tabs principales
+tab_pred, tab_factores, tab_info = st.tabs([
+    "🔬 Análisis Predictivo", 
+    "📊 Análisis de Variables",
+    "📖 Metodología"
+])
+
 # ============================================================
 # TAB DE PREDICCIÓN
 # ============================================================
