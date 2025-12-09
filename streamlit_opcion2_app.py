@@ -467,33 +467,33 @@ def obtener_coeficientes_logistic(modelo_logistic):
 # INTERFAZ PRINCIPAL
 # ============================================================
 
-# Header académico
 st.markdown("""
     <div class="header-academico">
         <h1 class="header-title">Sistema de Predicción de Riesgo de Diabetes Mellitus</h1>
         <p class="header-subtitle">
             Modelo predictivo basado en análisis multivariado de datos ENSANUT 2023
         </p>
+
         <div class="header-authors">
-            <span class="author-name">Patricia Herrejón Calderón</span>
-            <span class="author-name">Luis Corona Alcantar</span>
+            <span class="author-name">Patricia Herrejón Calderón</span><br>
+            <span class="author-email">
+                ✉ <a href="mailto:nutriherrejon@gmail.com"
+                     style="color:#f2f2f2; text-decoration:none;">
+                     nutriherrejon@gmail.com
+                </a>
+            </span>
+            <br><br>
+
+            <span class="author-name">Luis Corona Alcantar</span><br>
+            <span class="author-email">
+                ✉ <a href="mailto:lca1643@gmail.com"
+                     style="color:#f2f2f2; text-decoration:none;">
+                     lca1643@gmail.com
+                </a>
+            </span>
         </div>
     </div>
 """, unsafe_allow_html=True)
-st.markdown(
-    """
-    <div style="text-align: center; margin-top: -10px;">
-        <p style="font-size: 17px; color: #f2f2f2; margin-top: -10px;">
-            📧 <a href="mailto:nutriherrejon@gmail.com" style="color:#f2f2f2; text-decoration:none;">
-            nutriherrejon@gmail.com</a>
-            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-            📧 <a href="mailto:lca1643@gmail.com" style="color:#f2f2f2; text-decoration:none;">
-            lca1643@gmail.com</a>
-        </p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
 
 # Tabs principales
 tab_pred, tab_factores, tab_info = st.tabs([
