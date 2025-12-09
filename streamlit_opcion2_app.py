@@ -487,7 +487,20 @@ tab_pred, tab_factores, tab_info = st.tabs([
     "📊 Análisis de Variables",
     "📖 Metodología"
 ])
-
+st.markdown(
+    """
+    <div style="text-align: center; margin-top: -10px;">
+        <p style="font-size: 17px; color: #f2f2f2; margin-top: -10px;">
+            📧 <a href="mailto:nutriherrejon@gmail.com" style="color:#f2f2f2; text-decoration:none;">
+            nutriherrejon@gmail.com</a>
+            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+            📧 <a href="mailto:lca1643@gmail.com" style="color:#f2f2f2; text-decoration:none;">
+            lca1643@gmail.com</a>
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 # ============================================================
 # TAB DE PREDICCIÓN
 # ============================================================
