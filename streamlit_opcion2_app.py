@@ -396,7 +396,7 @@ with st.sidebar:
     st.markdown("""
         <div style="text-align: center; padding-top: 1rem; font-size: 0.75rem; opacity: 0.8;">
             <p style="margin: 0;">Versión 1.0.0</p>
-            <p style="margin: 0.5rem 0 0 0;">© 2024</p>
+            <p style="margin: 0.5rem 0 0 0;">© 2025</p>
         </div>
     """, unsafe_allow_html=True)
 
