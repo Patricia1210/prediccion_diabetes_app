@@ -843,7 +843,7 @@ st.markdown("""
             <strong>Autores:</strong> Patricia Herrejón Calderón & Luis Corona Alcantar
         </p>
         <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; opacity: 0.8;">
-            © 2024 | Versión 1.0.0 | Todos los derechos reservados
+            © 2025 | Versión 1.0.0 | Todos los derechos reservados
         </p>
     </div>
 """, unsafe_allow_html=True)
