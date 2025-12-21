@@ -1,5 +1,5 @@
 # streamlit_app.py
-# Dashboard de riesgo de diabetes con diseño profesional académico
+# Dashboard de predicción de diabetes - Versión actualizada
 
 import streamlit as st
 import pandas as pd
@@ -19,13 +19,11 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# CSS personalizado para diseño académico profesional
+# CSS personalizado
 st.markdown("""
     <style>
-    /* Importar fuente académica */
     @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
     
-    /* Variables de color estilo revista científica */
     :root {
         --primary-blue: #1e3a5f;
         --secondary-blue: #2d5986;
@@ -38,13 +36,11 @@ st.markdown("""
         --danger-red: #991b1b;
     }
     
-    /* Fondo general */
     .main {
         background-color: #f4f6f8;
         font-family: 'Source Sans Pro', sans-serif;
     }
     
-    /* Sidebar profesional */
     [data-testid="stSidebar"] {
         background: linear-gradient(180deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
         padding: 2rem 1rem;
@@ -54,11 +50,27 @@ st.markdown("""
         color: white !important;
     }
     
-    [data-testid="stSidebar"] .stMarkdown {
-        color: white !important;
+    /* Navegación mejorada */
+    .nav-section {
+        background: rgba(255,255,255,0.1);
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        border-left: 4px solid var(--accent-gold);
     }
     
-    /* Header académico */
+    .nav-item {
+        padding: 0.5rem 0;
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-icon {
+        font-size: 1.2rem;
+        margin-right: 0.8rem;
+    }
+    
     .header-academico {
         background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
         padding: 2.5rem 3rem;
@@ -96,7 +108,6 @@ st.markdown("""
         margin-right: 1.5rem;
     }
     
-    /* Secciones tipo paper académico */
     .paper-section {
         background: white;
         padding: 2.5rem;
@@ -124,7 +135,6 @@ st.markdown("""
         margin: 1.5rem 0 1rem 0;
     }
     
-    /* Métricas estilo científico */
     .metric-card {
         background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
         padding: 1.8rem;
@@ -150,7 +160,6 @@ st.markdown("""
         font-weight: 300;
     }
     
-    /* Alertas tipo journal */
     .alert-box {
         padding: 1.5rem;
         border-radius: 6px;
@@ -178,7 +187,6 @@ st.markdown("""
         color: #7f1d1d;
     }
     
-    /* Botones académicos */
     .stButton > button {
         background: linear-gradient(90deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
         color: white;
@@ -199,7 +207,6 @@ st.markdown("""
         box-shadow: 0 6px 16px rgba(30, 58, 95, 0.4);
     }
     
-    /* Inputs estilo formulario académico */
     .stNumberInput > div > div > input,
     .stSelectbox > div > div > select {
         border-radius: 4px;
@@ -213,14 +220,12 @@ st.markdown("""
         border-color: var(--secondary-blue);
     }
     
-    /* Labels mejorados */
     label {
         font-weight: 600 !important;
         color: var(--dark-gray) !important;
         font-size: 0.92rem !important;
     }
     
-    /* Tabs estilo revista */
     .stTabs [data-baseweb="tab-list"] {
         gap: 0;
         background-color: white;
@@ -244,7 +249,6 @@ st.markdown("""
         color: var(--primary-blue);
     }
     
-    /* Tabla estilo paper */
     .dataframe {
         border-radius: 6px;
         overflow: hidden;
@@ -262,7 +266,6 @@ st.markdown("""
         background-color: var(--light-gray);
     }
     
-    /* Info boxes */
     .info-box {
         background: var(--light-gray);
         padding: 1.5rem;
@@ -271,7 +274,6 @@ st.markdown("""
         margin: 1rem 0;
     }
     
-    /* Divisor académico */
     .academic-divider {
         height: 2px;
         background: linear-gradient(90deg, var(--accent-gold) 0%, var(--medium-gray) 100%);
@@ -279,7 +281,6 @@ st.markdown("""
         border: none;
     }
     
-    /* Footer tipo journal */
     .footer-academic {
         background: var(--primary-blue);
         color: white;
@@ -289,7 +290,6 @@ st.markdown("""
         border-top: 4px solid var(--accent-gold);
     }
     
-    /* Highlighting para resultados */
     .highlight-box {
         background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
         padding: 1.5rem;
@@ -298,11 +298,26 @@ st.markdown("""
         margin: 1rem 0;
     }
     
-    /* Íconos de sección */
     .section-icon {
         font-size: 1.5rem;
         margin-right: 0.5rem;
         vertical-align: middle;
+    }
+    
+    /* IMC Display */
+    .imc-display {
+        background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        padding: 1.2rem;
+        border-radius: 8px;
+        border-left: 4px solid #0284c7;
+        margin: 1rem 0;
+    }
+    
+    .imc-value {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #0369a1;
+        font-family: 'Libre Baskerville', serif;
     }
     
     h3 {
@@ -314,7 +329,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ============================================================
-# SIDEBAR - PANEL LATERAL PROFESIONAL
+# SIDEBAR
 # ============================================================
 
 with st.sidebar:
@@ -335,18 +350,25 @@ with st.sidebar:
     st.markdown("""
         <div style="margin: 1.5rem 0;">
             <h3 style="color: white; font-size: 1rem; margin-bottom: 1rem; font-family: 'Libre Baskerville', serif;">
-                📋 NAVEGACIÓN
+                📋 SECCIONES
             </h3>
         </div>
     """, unsafe_allow_html=True)
     
     st.markdown("""
-        <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 6px; margin-bottom: 1rem;">
-            <p style="margin: 0; font-size: 0.9rem;">
-                • Predicción Individual<br>
-                • Factores de Riesgo<br>
-                • Información del Sistema
-            </p>
+        <div class="nav-section">
+            <div class="nav-item">
+                <span class="nav-icon">🔬</span>
+                <span>Análisis Predictivo</span>
+            </div>
+            <div class="nav-item">
+                <span class="nav-icon">📊</span>
+                <span>Análisis de Variables</span>
+            </div>
+            <div class="nav-item">
+                <span class="nav-icon">📖</span>
+                <span>Metodología del Sistema</span>
+            </div>
         </div>
     """, unsafe_allow_html=True)
     
@@ -355,13 +377,13 @@ with st.sidebar:
     st.markdown("""
         <div style="margin: 1.5rem 0;">
             <h3 style="color: white; font-size: 1rem; margin-bottom: 1rem; font-family: 'Libre Baskerville', serif;">
-                👥 DESARROLLADORES
+                👥 EQUIPO DE DESARROLLO
             </h3>
         </div>
     """, unsafe_allow_html=True)
     
     st.markdown("""
-        <div style="background: rgba(255,255,255,0.1); padding: 1.2rem; border-radius: 6px; margin-bottom: 1rem;">
+        <div class="nav-section">
             <p style="margin: 0 0 0.8rem 0; font-weight: 600; font-size: 0.95rem;">
                 Patricia Herrejón Calderón
             </p>
@@ -382,11 +404,11 @@ with st.sidebar:
     """, unsafe_allow_html=True)
     
     st.markdown("""
-        <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 6px; font-size: 0.85rem; line-height: 1.6;">
+        <div class="nav-section" style="font-size: 0.85rem; line-height: 1.6;">
             <p style="margin: 0;">
                 Sistema desarrollado con base en datos de la Encuesta Nacional 
                 de Salud y Nutrición 2023 de México, utilizando técnicas avanzadas 
-                de machine learning para la predicción de riesgo de diabetes.
+                de machine learning.
             </p>
         </div>
     """, unsafe_allow_html=True)
@@ -396,7 +418,7 @@ with st.sidebar:
     st.markdown("""
         <div style="text-align: center; padding-top: 1rem; font-size: 0.75rem; opacity: 0.8;">
             <p style="margin: 0;">Versión 1.0.0</p>
-            <p style="margin: 0.5rem 0 0 0;">© 2025</p>
+            <p style="margin: 0.5rem 0 0 0;">© 2024</p>
         </div>
     """, unsafe_allow_html=True)
 
@@ -422,6 +444,7 @@ def cargar_modelos():
 
 MODELOS = cargar_modelos()
 
+# Features que el modelo espera (incluyendo Region)
 FEATURES = [
     "Region", "Edad", "Sexo", "Peso", "Talla", "Cintura", "IMC",
     "Sistolica", "Diastolica", "Depresion", "Prediabetico", "Infarto",
@@ -432,6 +455,26 @@ FEATURES = [
 # ============================================================
 # FUNCIONES AUXILIARES
 # ============================================================
+
+def calcular_imc(peso_kg, talla_cm):
+    """Calcula el IMC a partir de peso y talla."""
+    talla_m = talla_cm / 100
+    return peso_kg / (talla_m ** 2)
+
+def clasificar_imc(imc):
+    """Clasifica el IMC según estándares OMS."""
+    if imc < 18.5:
+        return "Bajo peso", "#3b82f6"
+    elif imc < 25:
+        return "Normal", "#10b981"
+    elif imc < 30:
+        return "Sobrepeso", "#f59e0b"
+    elif imc < 35:
+        return "Obesidad I", "#ef4444"
+    elif imc < 40:
+        return "Obesidad II", "#dc2626"
+    else:
+        return "Obesidad III", "#991b1b"
 
 def map_si_no(valor_str: str) -> int:
     return 1 if valor_str == "Sí" else 0
@@ -466,7 +509,7 @@ def obtener_coeficientes_logistic(modelo_logistic):
 # ============================================================
 # INTERFAZ PRINCIPAL
 # ============================================================
-# Header académico
+
 st.markdown("""
     <div class="header-academico">
         <h1 class="header-title">Sistema de Predicción de Riesgo de Diabetes Mellitus</h1>
@@ -492,6 +535,7 @@ tab_pred, tab_factores, tab_info = st.tabs([
     "📊 Análisis de Variables",
     "📖 Metodología"
 ])
+
 # ============================================================
 # TAB DE PREDICCIÓN
 # ============================================================
@@ -526,18 +570,36 @@ with tab_pred:
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        region = st.number_input("Región (1–4)", min_value=1, max_value=4, value=3, step=1)
         edad = st.number_input("Edad (años)", min_value=18, max_value=110, value=40, step=1)
         sexo_str = st.selectbox("Sexo biológico", ["Femenino", "Masculino"])
+        peso = st.number_input("Peso corporal (kg)", min_value=30.0, max_value=250.0, value=75.0, step=0.5)
     
     with col2:
-        peso = st.number_input("Peso corporal (kg)", min_value=30.0, max_value=250.0, value=75.0, step=0.5)
         talla = st.number_input("Talla (cm)", min_value=120.0, max_value=220.0, value=165.0, step=0.5)
         cintura = st.number_input("Perímetro de cintura (cm)", min_value=50.0, max_value=200.0, value=90.0, step=0.5)
     
     with col3:
-        imc = st.number_input("Índice de Masa Corporal (kg/m²)", min_value=10.0, max_value=60.0, value=27.0, step=0.1)
+        # Calcular IMC automáticamente
+        imc_calculado = calcular_imc(peso, talla)
+        clasificacion_imc, color_imc = clasificar_imc(imc_calculado)
+        
+        st.markdown(f"""
+            <div class="imc-display">
+                <div style="font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 600; color: #0369a1;">
+                    📊 Índice de Masa Corporal (Calculado)
+                </div>
+                <div class="imc-value">{imc_calculado:.2f} kg/m²</div>
+                <div style="margin-top: 0.8rem; padding: 0.5rem; background: white; border-radius: 4px; border-left: 3px solid {color_imc};">
+                    <strong style="color: {color_imc};">Clasificación:</strong> {clasificacion_imc}
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
+    
+    # Datos de presión arterial
+    col4, col5 = st.columns(2)
+    with col4:
         sistolica = st.number_input("Presión sistólica (mmHg)", min_value=80.0, max_value=260.0, value=120.0, step=1.0)
+    with col5:
         diastolica = st.number_input("Presión diastólica (mmHg)", min_value=40.0, max_value=150.0, value=80.0, step=1.0)
     
     st.markdown('<hr class="academic-divider">', unsafe_allow_html=True)
@@ -545,19 +607,19 @@ with tab_pred:
     # Sección de antecedentes clínicos
     st.markdown('<div class="subsection-title">II. Historia Clínica y Antecedentes Familiares</div>', unsafe_allow_html=True)
     
-    col4, col5, col6 = st.columns(3)
+    col6, col7, col8 = st.columns(3)
     
-    with col4:
+    with col6:
         depresion_str = st.selectbox("Diagnóstico de depresión", ["No", "Sí"])
         prediabetico_str = st.selectbox("Estado prediabético", ["No", "Sí"])
         infarto_str = st.selectbox("Antecedente de infarto", ["No", "Sí"])
     
-    with col5:
+    with col7:
         padre_str = st.selectbox("Diabetes en padre", ["No", "Sí"])
         madre_str = st.selectbox("Diabetes en madre", ["No", "Sí"])
         colesterol_str = st.selectbox("Hipercolesterolemia", ["No", "Sí"])
     
-    with col6:
+    with col8:
         trigliceridos_str = st.selectbox("Hipertrigliceridemia", ["No", "Sí"])
         fumar_str = st.selectbox("Tabaquismo", ["No", "Sí"])
         alcohol_str = st.selectbox("Consumo de alcohol", ["No", "Sí"])
@@ -583,14 +645,26 @@ with tab_pred:
         fumar = map_si_no(fumar_str)
         alcohol = map_si_no(alcohol_str)
         
+        # Crear diccionario con Region=3 (valor por defecto)
         datos_dict = {
-            "Region": region, "Edad": edad, "Sexo": sexo, "Peso": peso,
-            "Talla": talla, "Cintura": cintura, "IMC": imc,
-            "Sistolica": sistolica, "Diastolica": diastolica,
-            "Depresion": depresion, "Prediabetico": prediabetico,
-            "Infarto": infarto, "Padre_diabetico": padre_diabetico,
-            "Madre_diabetica": madre_diabetica, "Colesterol": colesterol,
-            "Trigliceridos": trigliceridos, "Fumar": fumar, "Alcohol": alcohol,
+            "Region": 3,  # Valor por defecto ya que no se pregunta al usuario
+            "Edad": edad, 
+            "Sexo": sexo, 
+            "Peso": peso,
+            "Talla": talla, 
+            "Cintura": cintura, 
+            "IMC": imc_calculado,  # IMC calculado
+            "Sistolica": sistolica, 
+            "Diastolica": diastolica,
+            "Depresion": depresion, 
+            "Prediabetico": prediabetico,
+            "Infarto": infarto, 
+            "Padre_diabetico": padre_diabetico,
+            "Madre_diabetica": madre_diabetica, 
+            "Colesterol": colesterol,
+            "Trigliceridos": trigliceridos, 
+            "Fumar": fumar, 
+            "Alcohol": alcohol,
         }
         
         X_nuevo = pd.DataFrame([[datos_dict[feat] for feat in FEATURES]], columns=FEATURES)
@@ -647,6 +721,7 @@ with tab_pred:
         st.markdown(f"""
         **Detalles técnicos del análisis:**
         - **Modelo implementado:** {nombre_modelo}
+        - **IMC calculado:** {imc_calculado:.2f} kg/m² ({clasificacion_imc})
         - **Nivel de confianza:** Este resultado es una estimación probabilística basada en análisis estadístico
         - **Recomendaciones:** Los resultados deben ser interpretados por profesionales médicos calificados
         - **Validación requerida:** Se requiere confirmación mediante estudios de laboratorio especializados
@@ -769,7 +844,7 @@ with tab_info:
         
         **Dominio Antropométrico:**
         - Edad, sexo, peso, talla
-        - Índice de Masa Corporal (IMC)
+        - Índice de Masa Corporal (IMC) - calculado automáticamente
         - Perímetro de cintura
         
         **Dominio Clínico:**
@@ -813,12 +888,18 @@ with tab_info:
     - Patricia Herrejón Calderón - Desarrollo e implementación de modelos
     - Luis Corona Alcantar - Arquitectura de datos y validación estadística
     
+    **Contexto académico:**
+    - Tesis de Maestría en Ciencia de Datos
+    - Comparación exhaustiva de algoritmos de machine learning
+    - Optimización de hiperparámetros mediante validación cruzada
+    
     **Base de datos:**
     - Instituto Nacional de Salud Pública (INSP). Encuesta Nacional de Salud y Nutrición 2023 (ENSANUT 2023). México, 2023.
     
     **Tecnologías implementadas:**
     - Python 3.x, Scikit-learn, Pandas, NumPy
-    - Streamlit para interfaz web
+    - Imbalanced-learn para técnicas de balanceo
+    - Streamlit para interfaz web interactiva
     - Joblib para persistencia de modelos
     
     **Contacto y retroalimentación:**
@@ -840,10 +921,10 @@ st.markdown("""
         </p>
         <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.3); margin: 1.5rem 0;">
         <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">
-            <strong>Autores:</strong> Patricia Herrejón Calderón & Luis Corona Alcantar
+            <strong>Equipo de desarrollo:</strong> Patricia Herrejón Calderón & Luis Corona Alcantar
         </p>
         <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; opacity: 0.8;">
-            © 2025 | Versión 1.0.0 | Todos los derechos reservados
+            © 2024 | Versión 1.0.0 | Todos los derechos reservados
         </p>
     </div>
 """, unsafe_allow_html=True)
